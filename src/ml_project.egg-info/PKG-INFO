@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ml-project
+Version: 0.0.0
+Summary: A small python package for ml app
+Home-page: https://github.com/ericmaniraguha/mlflow_project_end_to_end
+Author: ericmaniraguha
+Author-email: ericmaniraguha@gmail.com
+Project-URL: Bug Tracker, https://github.com/ericmaniraguha/mlflow_project_end_to_end/issues
