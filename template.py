@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 
-project_name = "ml_project"
+project_name = "mlProject"
 
 
 list_of_files = [
@@ -28,12 +28,15 @@ list_of_files = [
     "Dockerfile",
     "requirements.txt",
     "setup.py",
-    "research/trials.piny",
+    "research/trials.ipynb",
     "templates/index.html",
     "test.py"
 
 
 ]
+
+
+
 
 for filepath in list_of_files:
     filepath = Path(filepath)
