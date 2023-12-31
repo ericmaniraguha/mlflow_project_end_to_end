@@ -134,14 +134,6 @@ NB: at each run i should delete the artifact created.
 
 ### 8. Artifact Handling
 
-Add the artifact inside the gitignore folder - do not want to push them.
-
-```
-This dataset appears to have 12 columns with the following features:
-fixed acidity,volatile acidity,citric acid,residual sugar,chlorides,free sulfur dioxide,total sulfur dioxide,density,pH,sulphates,alcohol,quality
-
-```
-
 GitHub Repository: [https://github.com/ericmaniraguha/mlflow_project_end_to_end](https://github.com/ericmaniraguha/mlflow_project_end_to_end)
 
 Dagshub Project Tracking: [https://dagshub.com/ericmaniraguha/mlflow-project-industry](https://dagshub.com/ericmaniraguha/mlflow-project-industry)
