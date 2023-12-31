@@ -134,6 +134,19 @@ NB: at each run i should delete the artifact created.
 
 ### 8. Artifact Handling
 
+## 2. Data Validation configuration
+
+- Create the file inside the ml_project >> research >> `02_data_validation.ipynb`
+- configure the `schema.yaml`: columns of my dataset
+- Check structure of my dataset such as `datatype`, `data columns`, ...
+- Perform the configurationManager
+- Data validation Configurations
+- run my `02_data_validation.ipynb` for checking it validation, then it does create the artifact file which contain text showing the truth of our validation.
+- Update the entity with `DataValidationConfig` and inside the config >> `configuration.py` add this method `get_data_validation_config` 
+- Update the component as well 'DataValidation'
+- create the pipelines `state_02_data_validation.py` add some code 
+- clean the artifact and run the `python main.py`
+
 GitHub Repository: [https://github.com/ericmaniraguha/mlflow_project_end_to_end](https://github.com/ericmaniraguha/mlflow_project_end_to_end)
 
 Dagshub Project Tracking: [https://dagshub.com/ericmaniraguha/mlflow-project-industry](https://dagshub.com/ericmaniraguha/mlflow-project-industry)
