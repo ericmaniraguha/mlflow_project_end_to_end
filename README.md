@@ -134,18 +134,84 @@ NB: at each run i should delete the artifact created.
 
 ### 8. Artifact Handling
 
-## 2. Data Validation configuration
+## 2. Workflows Data Validation configuration
 
-- Create the file inside the ml_project >> research >> `02_data_validation.ipynb`
-- configure the `schema.yaml`: columns of my dataset
-- Check structure of my dataset such as `datatype`, `data columns`, ...
-- Perform the configurationManager
-- Data validation Configurations
-- run my `02_data_validation.ipynb` for checking it validation, then it does create the artifact file which contain text showing the truth of our validation.
-- Update the entity with `DataValidationConfig` and inside the config >> `configuration.py` add this method `get_data_validation_config` 
-- Update the component as well 'DataValidation'
-- create the pipelines `state_02_data_validation.py` add some code 
-- clean the artifact and run the `python main.py`
+#### 1. Update Configuration Files
+   - Update `config.yaml` in the `ml_project` directory.
+   - Update `schema.yaml` with the columns of the dataset in the `research` directory (updated once).
+   - Update `params.yaml` if needed.
+
+#### 2. Data Validation Configuration
+   - Create a new file: `02_data_validation.ipynb` inside the `ml_project` > `research` directory.
+   - Configure `schema.yaml` in the notebook with dataset details (datatype, data columns, etc.).
+   - Set up ConfigurationManager in the notebook.
+   - Define Data Validation Configurations.
+
+#### 3. Run Data Validation
+   - Execute `02_data_validation.ipynb` to perform data validation.
+   - Create an artifact file containing validation results.
+
+#### 4. Update Configuration Manager and Entity
+   - Update the data path in `config.py` located inside the `config` folder. Add `data_validation` path.
+   - Update the entity with `DataValidationConfig`.
+   - In the `config` > `configuration.py`, add the method `get_data_validation_config`.
+
+#### 5. Update Components
+   - Update the component 'DataValidation' to incorporate the new configurations.
+
+#### 6. Create Pipelines
+   - Create a new pipeline file `state_02_data_validation.py`.
+   - Add code to integrate the Data Validation component.
+
+#### 7. Main Application
+   - Update `main.py` to include the new pipeline for data validation.
+
+#### 8. Update the App
+   - Update `app.py` to reflect any changes made in the main application or pipelines.
+
+#### 9. Run Application
+   - Clean any existing artifacts.
+   - Run `python main.py` to execute the updated application.
+
+
+## 3. Workflows Data Transformation configuration
+
+#### 1. Update Configuration Files
+   - Update `config.yaml` in the `ml_project` directory.
+   - Update `schema.yaml` with the columns of the dataset in the `research` directory (updated once).
+   - Update `params.yaml` if needed.
+
+#### 2. Data Transformation Configuration
+   - Create a new file: `02_data_transformation.ipynb` inside the `ml_project` > `research` directory.
+   - Configure `schema.yaml` in the notebook with dataset details (datatype, data columns, etc.).
+   - Set up ConfigurationManager in the notebook.
+   - Define Data transformation Configurations.
+
+#### 3. Run Data Transformation
+   - Execute `02_data_transformation.ipynb` to perform data transformation.
+   - Create an artifact file containing transformation results.
+
+#### 4. Update Configuration Manager and Entity
+   - Update the data path in `config.py` located inside the `config` folder. Add `data_transformation` path.
+   - Update the entity with `DatatransformationConfig`.
+   - In the `config` > `configuration.py`, add the method `get_data_transformation_config`.
+
+#### 5. Update Components
+   - Update the component 'Datatransformation' to incorporate the new configurations.
+
+#### 6. Create Pipelines
+   - Create a new pipeline file `state_02_data_transformation.py`.
+   - Add code to integrate the Data transformation component.
+
+#### 7. Main Application
+   - Update `main.py` to include the new pipeline for data transformation.
+
+#### 8. Update the App
+   - Update `app.py` to reflect any changes made in the main application or pipelines.
+
+#### 9. Run Application
+   - Clean any existing artifacts.
+   - Run `python main.py` to execute the updated application.
 
 GitHub Repository: [https://github.com/ericmaniraguha/mlflow_project_end_to_end](https://github.com/ericmaniraguha/mlflow_project_end_to_end)
 
