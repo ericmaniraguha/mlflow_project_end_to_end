@@ -194,6 +194,77 @@ Writing other code of :
       7. Update the pipeline 
       8. Update the `main.py` and clear the artifacts and run my code though terminal using `python main.py`
 
+## 4. Workflows Model Evaluation configuration
+
+Use same approach steps i used before.
+
+# How to run?
+### STEPS:
+
+Clone the repository
+
+```bash
+https://github.com/ericmaniraguha/mlflow_project_end_to_end
+```
+### STEP 01- Create a conda environment after opening the repository
+
+```bash
+conda create -n ml_project python=3.8 -y
+```
+
+```bash
+conda activate ml_project
+```
+
+
+### STEP 02- install the requirements
+```bash
+pip install -r requirements.txt
+```
+
+
+```bash
+# Finally run the following command
+python app.py
+```
+
+Now,
+```bash
+open up you local host and port
+```
+
+
+
+## MLflow
+
+[Documentation](https://mlflow.org/docs/latest/index.html)
+
+
+##### cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/ericmaniraguha/mlflow-project-industry.mlflow \
+MLFLOW_TRACKING_USERNAME=ericmaniraguha \
+MLFLOW_TRACKING_PASSWORD=bd6ba5c72da612a729968285da9d31aed7c7d68f \
+python script.py
+
+Run this to export as env variables:
+
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/ericmaniraguha/mlflow-project-industry.mlflow
+
+export MLFLOW_TRACKING_USERNAME=ericmaniraguha 
+
+export MLFLOW_TRACKING_PASSWORD=bd6ba5c72da612a729968285da9d31aed7c7d68f
+
+```
+
+
 GitHub Repository: [https://github.com/ericmaniraguha/mlflow_project_end_to_end](https://github.com/ericmaniraguha/mlflow_project_end_to_end)
 
 Dagshub Project Tracking: [https://dagshub.com/ericmaniraguha/mlflow-project-industry](https://dagshub.com/ericmaniraguha/mlflow-project-industry)
