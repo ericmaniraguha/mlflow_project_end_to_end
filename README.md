@@ -198,6 +198,12 @@ Writing other code of :
 
 Use same approach steps i used before.
 
+## 5. Create the prediction UI
+
+Steps: 
+1. Create the prediction pipeline 
+2. Create the prediction UI
+
 # How to run?
 ### STEPS:
 
