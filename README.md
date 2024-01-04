@@ -88,18 +88,18 @@ After configuration, follow the order to execute the files:
 
 ## Data Ingestion Notebook (01_data_ingestion.ipynb)
 
-``` Notebook Creation
- Create the 01_data_ingestion.ipynb inside the research folder, reading from the data ingestion of `config.yaml`.
+### Notebook Creation
+1. Create the `01_data_ingestion.ipynb` inside the `research` folder, reading from the data ingestion configuration specified in `config.yaml`.
 
- Constants and Imports
- Update the constant file` __init__.py `with path codes, then import them into the notebook 01_data_ingestion.ipynb.
+### Constants and Imports
+2. Update the constant file `__init__.py` with path codes, and then import them into the notebook `01_data_ingestion.ipynb`.
 
- Configuration Manager
- Create the configurationManager inside the notebook `01_data_ingestion.ipynb`, writing code for download, extraction, and the pipeline for calling other functions.
+### Configuration Manager
+3. Create the ConfigurationManager inside the notebook `01_data_ingestion.ipynb`, implementing code for downloading, extraction, and setting up a pipeline for calling other functions.
 
- Error Handling
- Face an error during runtime, should set or write something inside the yaml files (`schema.yaml`, `params.yaml`).
-```
+### Error Handling
+4. Handle potential errors during runtime. If errors occur, ensure to set or write appropriate values inside the YAML files (`schema.yaml`, `params.yaml`).
+
 
 ## Config Updates and Folder Structure
 
@@ -174,44 +174,25 @@ NB: at each run i should delete the artifact created.
    - Run `python main.py` to execute the updated application.
 
 
-## 3. Workflows Data Transformation configuration
+## 4. Workflows Model Training configuration
 
-#### 1. Update Configuration Files
-   - Update `config.yaml` in the `ml_project` directory.
-   - Update `schema.yaml` with the columns of the dataset in the `research` directory (updated once).
-   - Update `params.yaml` if needed.
+NB: `I will use same steps as the previous steps, only some few features i will add in params.py`
+1. Update config.yaml
+2. Update schema.yaml
+3. Update params.yaml
 
-#### 2. Data Transformation Configuration
-   - Create a new file: `02_data_transformation.ipynb` inside the `ml_project` > `research` directory.
-   - Configure `schema.yaml` in the notebook with dataset details (datatype, data columns, etc.).
-   - Set up ConfigurationManager in the notebook.
-   - Define Data transformation Configurations.
+- ElasticNet:
+      1. alpha: 0.2
+      2. l1_ratio: 0.1
 
-#### 3. Run Data Transformation
-   - Execute `02_data_transformation.ipynb` to perform data transformation.
-   - Create an artifact file containing transformation results.
+- After this step I can run my `04_model_trainer.ipynb`, and i should 1st perform restarting my kernel
 
-#### 4. Update Configuration Manager and Entity
-   - Update the data path in `config.py` located inside the `config` folder. Add `data_transformation` path.
-   - Update the entity with `DatatransformationConfig`.
-   - In the `config` > `configuration.py`, add the method `get_data_transformation_config`.
-
-#### 5. Update Components
-   - Update the component 'Datatransformation' to incorporate the new configurations.
-
-#### 6. Create Pipelines
-   - Create a new pipeline file `state_02_data_transformation.py`.
-   - Add code to integrate the Data transformation component.
-
-#### 7. Main Application
-   - Update `main.py` to include the new pipeline for data transformation.
-
-#### 8. Update the App
-   - Update `app.py` to reflect any changes made in the main application or pipelines.
-
-#### 9. Run Application
-   - Clean any existing artifacts.
-   - Run `python main.py` to execute the updated application.
+Writing other code of : 
+      4. Update the entity
+      5. Update the configuration manager in src config
+      6. Update the components
+      7. Update the pipeline 
+      8. Update the `main.py` and clear the artifacts and run my code though terminal using `python main.py`
 
 GitHub Repository: [https://github.com/ericmaniraguha/mlflow_project_end_to_end](https://github.com/ericmaniraguha/mlflow_project_end_to_end)
 
