@@ -1386,3 +1386,101 @@ x==========x]
 [2024-01-04 23:38:57,296: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
 
 x==========x]
+[2024-01-04 23:58:37,583: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.66:8080]
+[2024-01-04 23:58:37,583: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-01-04 23:58:53,866: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:58:53] "GET / HTTP/1.1" 200 -]
+[2024-01-04 23:58:54,346: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:58:54] "GET /static/css/styles.css HTTP/1.1" 200 -]
+[2024-01-04 23:58:54,356: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:58:54] "GET /static/css2/nunito-font.css HTTP/1.1" 200 -]
+[2024-01-04 23:58:54,359: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:58:54] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-01-04 23:58:54,365: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:58:54] "GET /static/js/scripts.js HTTP/1.1" 200 -]
+[2024-01-04 23:58:55,265: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:58:55] "[33mGET /static/assets/img/wine.jpg HTTP/1.1[0m" 404 -]
+[2024-01-04 23:58:55,267: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:58:55] "GET /static/assets/img/form-v9.jpg HTTP/1.1" 200 -]
+[2024-01-04 23:58:55,567: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:58:55] "[33mGET /static/fonts/Nunito/Nunito-Bold.ttf HTTP/1.1[0m" 404 -]
+[2024-01-04 23:58:55,745: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:58:55] "GET /static/assets/favicon.ico HTTP/1.1" 200 -]
+[2024-01-04 23:59:11,803: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:59:11] "GET / HTTP/1.1" 200 -]
+[2024-01-04 23:59:11,823: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:59:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-01-04 23:59:11,824: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:59:11] "[36mGET /static/css2/nunito-font.css HTTP/1.1[0m" 304 -]
+[2024-01-04 23:59:11,826: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:59:11] "[36mGET /static/css2/style.css HTTP/1.1[0m" 304 -]
+[2024-01-04 23:59:11,827: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:59:11] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-01-04 23:59:11,882: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:59:11] "[33mGET /static/assets/img/wine.jpg HTTP/1.1[0m" 404 -]
+[2024-01-04 23:59:11,884: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:59:11] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 -]
+[2024-01-04 23:59:11,965: INFO: _internal: 127.0.0.1 - - [04/Jan/2024 23:59:11] "[33mGET /static/fonts/Nunito/Nunito-Bold.ttf HTTP/1.1[0m" 404 -]
+[2024-01-05 08:05:22,039: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-05 08:05:22,047: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-05 08:05:22,050: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-05 08:05:22,059: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-05 08:05:22,060: INFO: common: created directory at: artifacts]
+[2024-01-05 08:05:22,060: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-05 08:05:23,922: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: C288:57EC2:8AA0F6:90BF96:65979C22
+Accept-Ranges: bytes
+Date: Fri, 05 Jan 2024 06:05:23 GMT
+Via: 1.1 varnish
+X-Served-By: cache-par-lfpg1960080-PAR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1704434723.000433,VS0,VE158
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9a8c04a611b4a12587b6ce236747dbad18612ff4
+Expires: Fri, 05 Jan 2024 06:10:23 GMT
+Source-Age: 0
+
+]
+[2024-01-05 08:05:23,936: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-05 08:05:23,937: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-05 08:05:23,939: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-05 08:05:23,940: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-05 08:05:23,942: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-05 08:05:23,942: INFO: common: created directory at: artifacts]
+[2024-01-05 08:05:23,943: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-05 08:05:23,973: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-05 08:05:23,973: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-05 08:05:23,976: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-05 08:05:23,977: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-05 08:05:23,978: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-05 08:05:23,979: INFO: common: created directory at: artifacts]
+[2024-01-05 08:05:23,980: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-05 08:05:24,009: INFO: data_transformation: Splited data into training and test sets]
+[2024-01-05 08:05:24,009: INFO: data_transformation: (1199, 12)]
+[2024-01-05 08:05:24,010: INFO: data_transformation: (400, 12)]
+[2024-01-05 08:05:24,010: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-05 08:05:24,010: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-01-05 08:05:24,013: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-05 08:05:24,014: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-05 08:05:24,015: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-05 08:05:24,016: INFO: common: created directory at: artifacts]
+[2024-01-05 08:05:24,017: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-05 08:05:24,077: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2024-01-05 08:05:24,077: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-01-05 08:05:24,080: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-05 08:05:24,081: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-05 08:05:24,083: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-05 08:05:24,084: INFO: common: created directory at: artifacts]
+[2024-01-05 08:05:24,085: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-05 08:05:24,303: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2024-01-05 08:05:27,410: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
