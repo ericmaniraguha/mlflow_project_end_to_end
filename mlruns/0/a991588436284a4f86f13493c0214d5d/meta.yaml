@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/MLOps/pulled%20from%20gitHub/mlflow_project_end_to_end/mlruns/0/a991588436284a4f86f13493c0214d5d/artifacts
+end_time: 1704402365852
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a991588436284a4f86f13493c0214d5d
+run_name: handsome-panda-155
+run_uuid: a991588436284a4f86f13493c0214d5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704402363158
+status: 3
+tags: []
+user_id: HP
