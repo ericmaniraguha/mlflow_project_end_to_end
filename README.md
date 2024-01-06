@@ -366,3 +366,7 @@ MLflow
  - Its Production Grade
  - Trace all of your expriements
  - Logging & tagging your model
+   
+## Status badge
+
+[![workflow](https://github.com/ericmaniraguha/mlflow_project_end_to_end/actions/workflows/main.yml/badge.svg)](https://github.com/ericmaniraguha/mlflow_project_end_to_end/actions/workflows/main.yml)
